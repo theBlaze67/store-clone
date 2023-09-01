@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Kanit&family=PT+Sans&family=Poppins&family=Signika&family=Ubuntu+Condensed&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-color: rgb(50, 38, 83);
+    color: #fff;
+    padding: 10px 20px;
+    font-family: 'Kanit', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 0 10px;
+}
+header i{
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 2rem;
+}
+.head-section{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(201, 203, 255);
+    justify-content: space-around;
+}
+.head-info{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.head-info h2{
+    font-size: 2rem;
+    margin: 10px;
+    text-align: center;
+}
+.head-info p{
+    line-height: 2;
+}
+.head-info a{
+    display: block;
+    background-color: rgb(50, 38, 83);
+    color: #fff;
+    text-decoration: none;
+    align-self: center;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.email-subscription{
+    background-color: rgb(92, 75, 153);
+    width: 40%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px #545454;
+}
+.email-subscription input{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 90%;
+    margin: 15px 0;
+}
+.email-subscription h2{
+    margin: 10px 0 0 0;
+}
+.email-subscription h3{
+    margin: 0 0 15px 0;
+}
+.email-subscription p{
+    margin: 20px 20px 15px 20px;
+    text-align: center;
+}
+.email-subscription a{
+    text-decoration: none;
+    color: rgb(50, 38, 83);
+    background-color: rgb(201, 203, 255);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.courses-section{
+    width: 100%;
+    margin: 20px 0;
+}
+.courses-section h2{
+    text-align: center;
+    font-size: 2rem;
+}
+.courses{
+    display: flex;
+    justify-content: space-around;
+}
+.course-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+    background-color: rgb(201, 203, 255);
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px #3d3d3d;
+}
+.course-box img{
+    border-radius: 10px;
+}
+.course-box h3{
+    font-size: 1.5rem;
+    margin: 10px 0 0 0;
+}
+.course-box p{
+    margin: 10px 0;
+}
+.course-box a{
+    padding: 10px 20px;
+    background-color: rgb(50, 38, 83);
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
+}
+@media (max-width:600px){
+    nav{
+        flex-direction: column;
+        align-items: initial;
+    }
+    nav ul{
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li{
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+    header i{
+        display: block;
+    }
+    nav ul.active{
+        display: flex;
+    }
+    .head-section{
+        flex-direction: column;
+    }
+    .head-info{
+        width: 100%;
+        text-align: center;
+    }
+    .email-subscription{
+        width: 100%;
+    }
+    .courses{
+        flex-direction: column;
+    }
+    .course-box{
+        width: 90%;
+        margin: 15px auto;
+    }
+}
