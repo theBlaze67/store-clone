@@ -1,1 +1,1 @@
-# store-clone
+#clone website
